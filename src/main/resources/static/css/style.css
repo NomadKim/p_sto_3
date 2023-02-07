@@ -1,0 +1,16 @@
+.user-card {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.user-card .avatar {
+    max-width: 60px;
+}
+
+.user-card .card-body {
+    padding-top: 0;
+    padding-right: 0;
+}
+.user-card .card-title {
+    margin: 0;
+}

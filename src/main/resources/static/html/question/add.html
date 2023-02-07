@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../js/authorization_check.js"></script>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ask a question</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="../css/error.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+</head>
+<body>
+
+<div id="header">
+    <!--    HEADER-->
+</div>
+<div class="container-fluid">
+
+    <h1 class="header my-5">Задать вопрос</h1>
+
+    <div class="row">
+        <div class="col-9">
+            <div class="card">
+                <div class="card-body">
+                    <form id="form" method="post">
+                        <div class="form-group">
+                            <p>
+                                <label for="titleInput">
+                                    <span>Заголовок вопроса</span>
+
+                            <input type="text" id="titleInput" name="titleInput" class="form-control js-title" required>
+                                    <span class="error" aria-live="polite"></span>
+                                </label>
+                            </p>
+
+                        <div class="form-group">
+                            <label for="questionBodyInput">Вопрос</label>
+                            <textarea class="editor" id="questionBodyInput" rows="10" required></textarea>
+                        </div>
+                            <div class="ui-widget">
+                            <label for="tagInput">Теги</label>
+                                <input type="text" id="tagInput" name="tagInput" class="tagInput" style="font-size: 20px" >
+                                <div class="error" style="font-size: .9rem; color: red; padding: .3rem .5rem; border-radius: .2rem; text-decoration: none" id="errorCode" hidden>Используйте только буквы, цифры и допустимые
+                                    знаки для разделения тегов: <h5>"," / ";" / пробел</h5>.
+                                </div>
+                                <div id="log" class="ui-widget-content" hidden></div>
+                            </div>
+                            <p>
+                        <button type="submit" class="btn btn-primary my-3" id="handleQuestion">Опубликовать вопрос</button>
+                        </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+
+            <div class="card">
+                <div class="card-header">
+                    Продумайте свой вопрос
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Сообщество поможет вам с конкретными проблемами кодирования, алгоритма или языка.
+
+                        Избегайте задавать вопросы, основанные на мнении.
+                    </h5>
+
+                    <p>
+                        <a class="h6 text-primary" data-toggle="collapse" href="#punct1" role="button"
+                           aria-expanded="false" aria-controls="punct1">
+                            1. Резюмируйте проблему
+                        </a>
+
+                    <div class="collapse" id="punct1">
+                        <div class="card card-body">
+                            Включите подробную информацию о вашей цели.
+
+                            Опишите ожидаемые и фактические результаты.
+
+                            Выложите любые сообщения об ошибках.
+                        </div>
+                    </div>
+                    </p>
+
+<p>
+                    <a class="h6 text-primary" data-toggle="collapse" href="#punct2" role="button"
+                       aria-expanded="false" aria-controls="punct2">
+                        2. Опишите, что вы пробовали
+
+                    </a>
+
+                    <div class="collapse mr-2" id="punct2">
+                        <div class="card card-body">
+                            Покажите, что вы пробовали, и расскажите нам, что вы нашли (на этом сайте или в другом
+                            месте) и почему это не соответствует вашим потребностям.
+                            Вы можете получить лучшие ответы,
+                            когда проводите исследования.
+                        </div>
+                    </div>
+                    </p>
+
+<p>
+                    <a class="h6 text-primary" data-toggle="collapse" href="#punct3" role="button"
+                       aria-expanded="false" aria-controls="punct3">
+                        3. Покажите какой-нибудь код
+                    </a>
+
+                    <div class="collapse" id="punct3">
+                        <div class="card card-body">
+                            При необходимости предоставьте минимальный объем кода, необходимый другим пользователям для
+                            воспроизведения вашей проблемы (также называемый минимальным, воспроизводимым примером)
+                        </div>
+                    </div>
+
+                    </p>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="footer">
+    <!--    FOOTER-->
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.tiny.cloud/1/jv3ztbs3yx37cs004t590bkcajkm7onuh97ixtoosum7w8fi/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="../js/tags.js"></script>
+<script src="../js/question.js"></script>
+<script src="../js/scripts.js"></script>
+
+<script>
+    tinymce.init({
+        selector: '#questionBodyInput',
+        language: "ru",
+        menubar: 'false',
+        toolbar: 'undo redo | styleselect | bold italic | codesample code link | alignleft aligncenter alignright alignjustify | outdent indent',
+        plugins: 'codesample code link',
+        codesample_languages: [
+            { text: 'Java', value: 'java' },
+            { text: 'HTML/XML', value: 'markup' },
+            { text: 'JavaScript', value: 'javascript' },
+            { text: 'CSS', value: 'css' },
+        ],
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        $("#form").validate({
+            rules: {
+                titleInput: {
+                    required: true,
+                },
+            },
+            messages: {
+                titleInput: {
+                    required: "Введите заголовок!"
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>

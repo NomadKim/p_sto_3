@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../js/authorization_check.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
+    <title>KataAcademy</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div id="app-header"></div>
+    <div class="row" style="height: 100vh" id="main-content">
+        <div class="col-2" id="app-side-bar" style="border-right: 1px solid lightgrey"></div>
+        <div class="col-7" style="height: 100vh; overflow: scroll">
+            <div class="heading p-3 d-flex justify-content-between" style="width: 100%">
+                <h3 class="h3">Все вопросы</h3>
+                <a class="btn btn-primary" href="/question/add">Задать вопрос</a>
+            </div>
+            <div class="question-nav p-3 d-flex justify-content-between" style="border-bottom: 1px solid lightgrey;
+            margin-bottom: 2rem">
+                <div>
+                    <p>
+                        <span class="counter-questions"></span>
+                    </p>
+                </div>
+                <div class="btn-group btn-group-sm" >
+                    <a href="#" class="btn btn-outline-secondary" aria-current="page"
+                       style="font-size: .7rem;  padding: .5rem .7rem">Новые</a>
+                    <a href="#" class="btn btn-outline-secondary">Репутация
+                    </a>
+<!--                    <a href="#" class="btn btn-outline-secondary" >Конкурсные-->
+<!--                        <span class="bg-primary p-1" style="color: white; border-radius: .3em">5</span>-->
+<!--                    </a>-->
+                    <a href="#" class="btn btn-outline-secondary active" >Неотвеченные</a>
+                </div>
+                <div>
+                    <button class="btn btn-info">Фильтры</button>
+                </div>
+            </div>
+
+            <div id="unansweredQuestions_browser">
+                <div class="container-fluid" id="unansweredQuestions_list">
+                </div>
+                <nav>
+                    <ul class="pagination justify-content-end" id="paginationButtons"></ul>
+                </nav>
+            </div>
+
+
+
+        </div>
+        <div class="col-3 d-flex flex-column p-3" style="color: #7b8185">
+            <div class="cerd shadow p-3 rounded mb-3" style="background-color: lightyellow; border: 1px solid
+            #c1ba04; border-radius: .5rem">
+                <h6 class="card-header" style="text-align: left; font-size: .8rem">Важное на Мете</h6>
+                <div class="card-body d-flex flex-column">
+                    <a href="#" style="font-size: .7rem; color: #333; text-decoration:none">Важное 1</a>
+                    <a href="#" style="font-size: .7rem; color: #333; text-decoration:none">Важное 2</a>
+                </div>
+            </div>
+            <h6 style="color: #333; font-weight: normal;">
+                Связанные метки
+            </h6>
+
+            <div class="tag-list">
+                <ul style="list-style: none; padding-left: .5rem">
+                    <li class="list-item mb-2">
+                        <a href="#"  style=" font-size: .7rem; background-color:
+                            lightblue; color: blue; padding: .3rem .5rem; border-radius: .2rem; text-decoration: none">
+                            Java</a>
+                        <span class="tag-side-count" style="font-size: .8rem"> x 7</span>
+                    </li>
+                    <li class="list-item mb-2" >
+                        <a href="#"  style="font-size: .7rem; background-color:
+                            lightblue; color: blue; padding: .3rem .5rem; border-radius: .2rem; text-decoration: none">
+                            Hibernate</a>
+                        <span class="tag-side-count" style="font-size: .8rem"> x 5</span>
+                    </li>
+                    <li class="light-item mb-2" >
+                        <a href="#"  style=" font-size: .7rem; background-color:
+                            lightblue; color: blue; padding: .3rem .5rem; border-radius: .2rem; text-decoration: none">
+                            Spring</a>
+                        <span class="tag-side-count" style="font-size: .8rem"> x 10</span>
+                    </li>
+                </ul>
+            </div>
+            <br>
+
+            <h6 style="color: #333; font-weight: normal;" id="top-tags-title">
+                Топ-10 меток
+            </h6>
+
+            <div class="tag-list">
+                <ul style="list-style: none; padding-left: .5rem" id = "top-tags-list">
+
+                </ul>
+            </div>
+
+            <br/>
+
+        </div>
+    </div>
+    <div id="app-footer"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+<script src="../js/layout/Header.js"></script>
+<script src="../js/layout/SideBar.js"></script>
+<script src="../js/layout/Footer.js"></script>
+<script src="../js/scripts.js"></script>
+<script src="../js/pagination.js"></script>
+<script src="../js/unanswered_questions.js"></script>
+<script src="../js/show_top_tags.js"></script>
+
+
+
+</body>
+</html>

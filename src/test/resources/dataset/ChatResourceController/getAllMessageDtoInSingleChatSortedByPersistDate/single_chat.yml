@@ -1,0 +1,13 @@
+single_chat:
+  - chat_id: 101
+    use_two_id: 102
+    user_one_id: 101
+    sort_ascending_flag: false
+  - chat_id: 102
+    use_two_id: 103
+    user_one_id: 101
+    sort_ascending_flag: true
+  - chat_id: 103
+    use_two_id: 103
+    user_one_id: 102
+    sort_ascending_flag: false

@@ -1,0 +1,31 @@
+votes_on_questions:
+  - id: 101
+    persist_date: 2021-12-06 00:00:00
+    vote: "UP_VOTE"
+    question_id: 101
+    user_id: 101
+  - id: 102
+    persist_date: 2021-12-06 00:00:00
+    vote: "UP_VOTE"
+    question_id: 104
+    user_id: 101
+  - id: 103
+    persist_date: 2021-12-06 00:00:00
+    vote: "DOWN_VOTE"
+    question_id: 103
+    user_id: 103
+  - id: 104
+    persist_date: 2021-12-06 00:00:00
+    vote: "DOWN_VOTE"
+    question_id: 103
+    user_id: 103
+  - id: 105
+    persist_date: 2021-12-06 00:00:00
+    vote: "DOWN_VOTE"
+    question_id: 102
+    user_id: 102
+  - id: 106
+    persist_date: 2021-12-06 00:00:00
+    vote: "UP_VOTE"
+    question_id: 104
+    user_id: 101

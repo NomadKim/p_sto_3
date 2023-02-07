@@ -1,0 +1,321 @@
+user_entity:
+  - id: 100
+    full_name: "USER"
+    password: "$2a$10$t23DKH6ME2VrAKAvjTURKuF4/9fjiorE9kwg2SZ0yiwmiwIIv7/zm"
+    persist_date: 2021-12-04 00:00:00
+    last_redaction_date: 2021-12-04 00:00:00
+    email: "user@mail.ru"
+    about: "about1"
+    city: "city"
+    link_site: "site"
+    link_github: "github"
+    link_vk: "vk"
+    is_enabled: 1
+    is_deleted: false
+    image_link: "image"
+    nickname: "USR"
+    role_id: 101
+  - id: 101
+    about: "SomethingTest1"
+    city: "TestCity1"
+    email: "Constantin@mail.mail"
+    full_name: "Constantin"
+    image_link: "linkTest1"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-05 00:00:00
+    link_github: "githubTest1@link"
+    link_site: "siteTest1@link"
+    link_vk: "vkTest1@link"
+    nickname: "NickNameTest1"
+    password: "someHardPasswordTest1"
+    persist_date: 2021-12-05 00:00:01
+    role_id: 101
+  - id: 102
+    about: "SomethingTest2"
+    city: "TestCity2"
+    email: "Egor@mail.mail"
+    full_name: "Egor"
+    image_link: "linkTest2"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest2@link"
+    link_site: "siteTest2link"
+    link_vk: "vkTest2@link"
+    nickname: "NickNameTest2"
+    password: "someHardPasswordTest2"
+    persist_date: 2021-12-06 00:00:02
+    role_id: 101
+  - id: 103
+    about: "SomethingTestTest3"
+    city: "TestCity3"
+    email: "Sergey@mail.mail"
+    full_name: "Sergey"
+    image_link: "linkTest3"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest3@link"
+    link_site: "siteTest3@link"
+    link_vk: "vkTest3@link"
+    nickname: "NickNameTest3"
+    password: "someHardPasswordTest3"
+    persist_date: 2021-12-06 00:00:03
+    role_id: 101
+  - id: 104
+    about: "SomethingTest4"
+    city: "TestCity4"
+    email: "Dmitriy@mail.mail"
+    full_name: "Dmitriy"
+    image_link: "linkTest4"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest4@link"
+    link_site: "siteTest4@link"
+    link_vk: "vkTest4@link"
+    nickname: "NickNameTest4"
+    password: "someHardPasswordTest4"
+    persist_date: 2021-12-06 00:00:04
+    role_id: 101
+  - id: 105
+    about: "SomethingTest5"
+    city: "TestCity5"
+    email: "Andrey@mail.mail"
+    full_name: "Andrey"
+    image_link: "linkTest5"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest5@link"
+    link_site: "siteTest5@link"
+    link_vk: "vkTest5@link"
+    nickname: "NickNameTest5"
+    password: "someHardPasswordTest5"
+    persist_date: 2021-12-06 00:00:05
+    role_id: 101
+  - id: 106
+    about: "SomethingTest6"
+    city: "TestCity6"
+    email: "Nikolai@mail.mail"
+    full_name: "Nikolai"
+    image_link: "linkTest6"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest6@link"
+    link_site: "siteTest6@link"
+    link_vk: "vkTest6@link"
+    nickname: "NickNameTest6"
+    password: "someHardPasswordTest6"
+    persist_date: 2021-12-06 00:00:06
+    role_id: 101
+  - id: 107
+    about: "SomethingTest7"
+    city: "TestCity7"
+    email: "Stepan@mail.mail"
+    full_name: "Stepan"
+    image_link: "linkTest7"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest7@link"
+    link_site: "siteTest7@link"
+    link_vk: "vkTest7@link"
+    nickname: "NickNameTest7"
+    password: "someHardPasswordTest7"
+    persist_date: 2021-12-06 00:00:07
+    role_id: 101
+  - id: 108
+    about: "SomethingTest8"
+    city: "TestCity8"
+    email: "Evgeniy@mail.mail"
+    full_name: "Evgeniy"
+    image_link: "linkTest8"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest8@link"
+    link_site: "siteTest8@link"
+    link_vk: "vkTest8@link"
+    nickname: "NickNameTest8"
+    password: "someHardPasswordTest8"
+    persist_date: 2021-12-06 00:00:08
+    role_id: 101
+  - id: 109
+    about: "SomethingTest9"
+    city: "TestCity9"
+    email: "Aleksandr@mail.mail"
+    full_name: "Aleksandr"
+    image_link: "linkTest9"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest9@link"
+    link_site: "siteTest9@link"
+    link_vk: "vkTest9@link"
+    nickname: "NickNameTest9"
+    password: "someHardPasswordTest9"
+    persist_date: 2021-12-06 00:00:09
+    role_id: 101
+  - id: 110
+    about: "SomethingTest10"
+    city: "TestCity10"
+    email: "Roman@mail.mail"
+    full_name: "Roman"
+    image_link: "linkTest10"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest10@link"
+    link_site: "siteTest10@link"
+    link_vk: "vkTest10@link"
+    nickname: "NickNameTest10"
+    password: "someHardPasswordTest10"
+    persist_date: 2021-12-06 00:00:10
+    role_id: 101
+  - id: 111
+    about: "SomethingTest11"
+    city: "TestCity11"
+    email: "Ilya@mail.mail"
+    full_name: "Ilya"
+    image_link: "linkTest11"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest11@link"
+    link_site: "siteTest11@link"
+    link_vk: "vkTest11@link"
+    nickname: "NickNameTest11"
+    password: "someHardPasswordTest11"
+    persist_date: 2021-12-06 00:00:11
+    role_id: 101
+  - id: 112
+    about: "SomethingTest12"
+    city: "TestCity12"
+    email: "Pavel@mail.mail"
+    full_name: "Pavel"
+    image_link: "linkTest12"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest12@link"
+    link_site: "siteTest12@link"
+    link_vk: "vkTest12@link"
+    nickname: "NickNameTest12"
+    password: "someHardPasswordTest12"
+    persist_date: 2021-12-06 00:00:12
+    role_id: 101
+  - id: 113
+    about: "SomethingTest13"
+    city: "TestCity13"
+    email: "Vladimir@mail.mail"
+    full_name: "Vladimir"
+    image_link: "linkTest13"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest13@link"
+    link_site: "siteTest13@link"
+    link_vk: "vkTest13@link"
+    nickname: "NickNameTest13"
+    password: "someHardPasswordTest13"
+    persist_date: 2021-12-06 00:00:13
+    role_id: 101
+  - id: 114
+    about: "SomethingTest14"
+    city: "TestCity14"
+    email: "Anton@mail.mail"
+    full_name: "Anton"
+    image_link: "linkTest14"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest14@link"
+    link_site: "siteTest14@link"
+    link_vk: "vkTest14@link"
+    nickname: "NickNameTest14"
+    password: "someHardPasswordTest14"
+    persist_date: 2021-12-06 00:00:14
+    role_id: 101
+  - id: 115
+    about: "SomethingTest15"
+    city: "TestCity15"
+    email: "Maxim@mail.mail"
+    full_name: "Maxim"
+    image_link: "linkTest15"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest15@link"
+    link_site: "siteTest15@link"
+    link_vk: "vkTest15@link"
+    nickname: "NickNameTest15"
+    password: "someHardPasswordTest15"
+    persist_date: 2021-12-06 00:00:15
+    role_id: 101
+  - id: 116
+    about: "SomethingTest16"
+    city: "TestCity16"
+    email: "Vadim@mail.mail"
+    full_name: "Vadim"
+    image_link: "linkTest16"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest16@link"
+    link_site: "siteTest16@link"
+    link_vk: "vkTest16@link"
+    nickname: "NickNameTest16"
+    password: "someHardPasswordTest16"
+    persist_date: 2021-12-06 00:00:16
+    role_id: 101
+  - id: 117
+    about: "SomethingTest17"
+    city: "TestCity17"
+    email: "Denis@mail.mail"
+    full_name: "Denis"
+    image_link: "linkTest17"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest17@link"
+    link_site: "siteTest17@link"
+    link_vk: "vkTest17@link"
+    nickname: "NickNameTest17"
+    password: "someHardPasswordTest17"
+    persist_date: 2021-12-06 00:00:17
+    role_id: 101
+  - id: 118
+    about: "SomethingTest18"
+    city: "TestCity18"
+    email: "Leonid@mail.mail"
+    full_name: "Leonid"
+    image_link: "linkTest18"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest18@link"
+    link_site: "siteTest18@link"
+    link_vk: "vkTest18@link"
+    nickname: "NickNameTest18"
+    password: "someHardPasswordTest18"
+    persist_date: 2021-12-06 00:00:18
+    role_id: 101
+  - id: 119
+    about: "SomethingTest19"
+    city: "TestCity19"
+    email: "Farhad@mail.mail"
+    full_name: "Farhad"
+    image_link: "linkTest19"
+    is_deleted: false
+    is_enabled: true
+    last_redaction_date: 2021-12-06 00:00:00
+    link_github: "githubTest19@link"
+    link_site: "siteTest19link"
+    link_vk: "vkTest19@link"
+    nickname: "NickNameTest19"
+    password: "someHardPasswordTest19"
+    persist_date: 2021-12-06 00:00:19
+    role_id: 101

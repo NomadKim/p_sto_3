@@ -1,0 +1,23 @@
+role:
+  - id: 100
+    name: "ROLE_ADMIN"
+  - id: 101
+    name: "ROLE_USER"
+
+user_entity:
+  - id: 101
+    full_name: "USER"
+    password: "$2b$10$cGQ/HnP70pqO1z7RtisfwOSQzrqZSw0tK8/rmrO7k0q1EY7rpSuka"
+    persist_date: 2021-12-06 00:00:00
+    last_redaction_date: 2021-12-06 00:00:00
+    email: "SomeEmail@mail.com"
+    about: "about1"
+    city: "city"
+    link_site: "site"
+    link_github: "github"
+    link_vk: "vk"
+    is_enabled: 1
+    is_deleted: false
+    image_link: "image"
+    nickname: "USR"
+    role_id: 101

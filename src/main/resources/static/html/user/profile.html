@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <script src="../../js/authorization_check.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
+    <title>KataAcademy</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div id="profile-header"></div>
+    <div class="row" style="height: 80vh" id="main-content">
+        <div class="col-2" id="app-side-bar" style="border-right: 1px solid lightgrey"></div>
+        <div class="col-10" style="height: 80vh; overflow: scroll">
+            <div class="heading p-3 d-flex justify-content-between" style="width: 100%">
+                <div class="userImage shadow rounded">
+                    <img src="../../images/header-images/icon/man.png" alt="userImage" style="height: 6rem">
+                </div>
+
+                <div class="profile-info d-flex flex-column" style="width: 100%;margin-left: 1rem">
+                    <div class="profile-edit-group d-flex align-self-end">
+                        <div class="edit-buttons">
+                            <a class="btn btn-sm btn-outline-secondary">
+                                <img src="../../images/header-images/icon/pen.png" alt="Редактировать"
+                                     style="height: .7rem">
+                                Редактировать профиль
+                            </a>
+
+                            <a class="btn btn-sm btn-outline-secondary">
+                                <img src="../../images/header-images/icon/network-profile.png" alt="Редактировать"
+                                     style="height: .7rem">
+                                Сетевой профиль
+                            </a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="h4">User <span class="user-id">1</span></p>
+                    </div>
+                    <div class="statistics d-flex">
+                        <div class="days-count d-flex" style="font-size: .8rem; color: gray">
+                            <img src="../../images/header-images/icon/cake.png" alt="cake" style="height: 1rem">
+                            <p style="line-height: 1rem; margin-left: .5rem">Участник в течение <span class="d-count">3
+                            </span>
+                                дней
+                            </p>
+                        </div>
+
+                        <div class="last-visit d-flex" style="font-size: .8rem; color: gray; margin-left: .5rem">
+                            <img src="../../images/header-images/icon/watch.png" alt="cake" style="height: 1rem">
+                            <p style="line-height: 1rem; margin-left: .5rem">Последнее посещение на этой неделе
+                            </p>
+                        </div>
+
+                        <div class="last-visit d-flex" style="font-size: .8rem; color: gray; margin-left: .5rem">
+                            <img src="../../images/header-images/icon/calendar.png" alt="cake" style="height: 1rem">
+                            <p style="line-height: 1rem; margin-left: .5rem">На сайте <span class="">2</span> дня, из
+                                них
+                                <span class="days">1</span>
+                                подряд
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="nav-bar">
+                <ul class="nav">
+                    <li class="nav-item" style="margin-left: 1rem; padding:  0 .8rem">
+                        <a href="#" style="text-decoration: none; color: gray; font-size: .8rem;">
+                            Профиль
+                        </a>
+                    </li>
+
+                    <li class="nav-item active" style="margin-left: 1rem; background-color: orange;  padding:  0
+                    .8rem; border-radius: .8rem">
+                        <a href="#" style="text-decoration: none; color: gray; font-size: .8rem; color: white;">
+                            Активность
+                        </a>
+                    </li>
+
+                    <li class="nav-item" style="margin-left: 1rem;  padding:  0 .8rem">
+                        <a href="#" style="text-decoration: none; color: gray; font-size: .8rem;">
+                            Настройка
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-fluid" style="margin-top: 1rem">
+                <div class="row" style="height: 50vh">
+                    <div class="col-2">
+                        <ul style="list-style: none; padding:0">
+                            <li class="active" style="background-color: lightgrey;  border-radius: .8rem; padding-left:
+                           .5rem">
+                                <a href="#" style="text-decoration: none; color: gray; font-size: .8rem;">Сводка</a>
+                            </li>
+                            <li style="padding-left: .5rem;">
+                                <a href="#" style="text-decoration: none; color: gray; font-size: .8rem;">Ответы</a>
+                            </li>
+                            <li style="padding-left: .5rem">
+                                <a href="#" style="text-decoration: none; color: gray; font-size: .8rem;">Вопросы</a>
+                            </li>
+                            <li style="padding-left: .5rem">
+                                <a href="#" style="text-decoration: none; color: gray; font-size: .8rem;">Метки</a>
+                            </li>
+                            <li style="padding-left: .5rem">
+                                <a href="#" style="text-decoration: none; color: gray; font-size: .8rem;">Знаки</a>
+                            </li>
+                            <li style="padding-left: .5rem">
+                                <a href="#" style="text-decoration: none; color: gray; font-size: .8rem;">Закладки</a>
+                            </li>
+                            <li style="padding-left: .5rem">
+                                <a href="#"
+                                   style="text-decoration: none; color: gray; font-size: .8rem;">Отслеживаемые</a>
+                            </li>
+                            <li style="padding-left: .5rem">
+                                <a href="#" style="text-decoration: none; color: gray; font-size: .8rem;">Конкурсные</a>
+                            </li>
+                            <li style="padding-left: .5rem">
+                                <a href="#" style="text-decoration: none; color: gray; font-size: .8rem;">Репутация</a>
+                            </li>
+                            <li style="padding-left: .5rem">
+                                <a href="#" style="text-decoration: none; color: gray; font-size: .8rem;">Все
+                                    действия</a>
+                            </li>
+                            <li style="padding-left: .5rem">
+                                <a href="#" style="text-decoration: none; color: gray; font-size: .8rem;">Реакции</a>
+                            </li>
+                            <li style="padding-left: .5rem">
+                                <a href="#" style="text-decoration: none; color: gray; font-size: .8rem;">Голоса</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-10" style="height: 80vh; overflow: scroll">
+                        <div class="container-fluid">
+                            <div class="row gap-2">
+                                <div class="col-5 card"
+                                     style="border: 1px solid lightgrey; border-radius: .5rem; padding: 1rem">
+                                    <div>
+                                        <div class="d-flex">
+                                            <img src="../../images/header-images/icon/graphic.png" alt="graphic"
+                                                 style="height: 2rem; margin: auto">
+                                        </div>
+                                        <div>
+                                            <p style="text-align: center">Репутация показывает,
+                                                насколько сообщество вам
+                                                благодарно</p>
+                                        </div>
+                                        <div>
+                                            <p style="text-align: center; font-size: .8rem; color: gray">Когда участники
+                                                голосуют
+                                                за ваши
+                                                сообщения, вы зарабатываете
+                                                репутацию и
+                                                получаете новые привилегии.</p>
+                                        </div>
+
+                                        <div>
+                                            <p style="text-align: center; font-size: .8rem; color:#333">
+                                                Дополнительная информация о
+                                                <a href="#" style="color:#333">репутации</a> и
+                                                <a href="#" style="color:#333">привилегиях
+                                                </a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4"
+                                     style="border: 1px solid lightgrey; border-radius: .5rem; padding: 1rem">
+                                    <div>
+                                        <div class="d-flex">
+                                            <img src="../../images/header-images/icon/warning-sign.png" alt="graphic"
+                                                 style="height: 2rem; margin: auto">
+                                        </div>
+                                        <div>
+                                            <p style="text-align: center">Знаки выдаются за полезные дела</p>
+                                        </div>
+                                        <div>
+                                            <p style="text-align: center; font-size: .8rem; color: gray">Знаки
+                                                представляют собой цифровые награды, которые вы получаете за оказанную
+                                                помощь и проявленное участие в жизни сообщества..</p>
+                                        </div>
+
+                                        <div>
+                                            <a href="#" class="btn btn-primary" style="font-size: .8rem">
+                                                Совершите тур и получите свой первый знак!
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2"
+                                     style="border: 1px solid lightgrey; border-radius: .5rem; padding: 1rem">
+                                    <div>
+                                        <div class="d-flex">
+                                            <img src="../../images/header-images/icon/astronaut.png" alt="graphic"
+                                                 style="height: 2rem; margin: auto">
+                                        </div>
+                                        <div>
+                                            <p style="text-align: center">Измерьте своё влияние</p>
+                                        </div>
+                                        <div>
+                                            <p style="text-align: center; font-size: .8rem; color: gray">Ваши сообщения
+                                                и полезные действия помогут сотням и тысячам людей..</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3" style="width: 113%">
+                                <div class="col-5 d-flex flex-column" style="margin-right: 1rem; padding:0">
+                                    <div class="group1 d-flex justify-content-between" style="margin-bottom: .5rem">
+                                        <h4 class="h5">Ответы</h4>
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary active"
+                                               style="font-size: .7rem">Голоса</a>
+                                            <a href="#" class="btn btn-outline-secondary" style="font-size: .7rem">
+                                                Активность</a>
+                                            <a href="#" class="btn btn-outline-secondary" style="font-size: .7rem">
+                                                Новые</a>
+                                        </div>
+
+                                    </div>
+                                    <div style="border: 1px solid lightgrey;
+                                    border-radius: .5rem;
+                                    box-sizing: initial;padding:1rem;
+                                    font-size: .8rem; color: gray">
+                                        <p style="text-align: center">
+                                            Вы не <span style="color: blue">ответили </span>ни на один вопрос
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-5 d-flex flex-column" style="margin-right: 1rem; padding:0">
+                                    <div class="group1 d-flex justify-content-between" style="margin-bottom: .5rem">
+                                        <h4 class="h5">Вопросы</h4>
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary active" style="font-size: .7rem">Голоса</a>
+                                            <a href="#" class="btn btn-outline-secondary" style="font-size: .7rem">Активность</a>
+                                            <a href="#" class="btn btn-outline-secondary" style="font-size: .7rem">Новые</a>
+                                            <a href="#" class="btn btn-outline-secondary" style="font-size: .7rem">Просмотры</a>
+                                        </div>
+
+                                    </div>
+                                    <div style="border: 1px solid lightgrey;
+                                    border-radius: .5rem;
+                                    box-sizing: initial;padding:1rem;
+                                    font-size: .8rem; color: gray">
+                                        <p style="text-align: center">
+                                            Вы не <span style="color: blue">задали </span>ни на один вопрос
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row mt-3" style="width: 113%">
+                                <div class="col-5 d-flex flex-column" style="margin-right: 1rem; padding:0">
+                                    <div class="group1 d-flex justify-content-between" style="margin-bottom: .5rem">
+                                        <h4 class="h5">Метки</h4>
+                                    </div>
+                                    <div style="border: 1px solid lightgrey;
+                                    border-radius: .5rem;
+                                    box-sizing: initial;padding:1rem;
+                                    font-size: .8rem; color: gray">
+                                        <p style="text-align: center">
+                                            У вас ещё нет сообщений ни по одной  <span style="color: blue">метке </span>
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-5 d-flex flex-column" style="margin-right: 1rem; padding:0">
+                                    <div class="group1 d-flex justify-content-between" style="margin-bottom: .5rem">
+                                        <h4 class="h5">Репутация</h4>
+                                    </div>
+                                    <div style="border: 1px solid lightgrey;
+                                    border-radius: .5rem;
+                                    box-sizing: initial;padding:1rem;
+                                    font-size: .8rem; color: gray">
+                                        <p style="text-align: center">
+                                            У вас ещё нет последних изменений в <span style="color: blue">репутации
+                                        </span>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-11 d-flex flex-column" style="width: 94%; padding:0">
+                                    <div class="group1 d-flex justify-content-between" style="margin-bottom: .5rem">
+                                        <h4 class="h5">Знаки</h4>
+                                    </div>
+                                    <div style="border: 1px solid lightgrey;
+                                    border-radius: .5rem;
+                                    box-sizing: initial;padding:1rem;
+                                    font-size: .8rem; color: gray">
+                                        <p style="text-align: center">
+                                            Вы ещё не получали  <span style="color: blue">знаки </span>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-11 d-flex flex-column" style="width: 94%; padding:0">
+                                    <div class="group1 d-flex justify-content-between" style="margin-bottom: .5rem">
+                                        <h4 class="h5">Закладки</h4>
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary active"
+                                               style="font-size: .7rem">Голоса</a>
+                                            <a href="#" class="btn btn-outline-secondary" style="font-size: .7rem">
+                                                Активность</a>
+                                            <a href="#" class="btn btn-outline-secondary" style="font-size: .7rem">
+                                                Новые</a>
+                                            <a href="#" class="btn btn-outline-secondary" style="font-size: .7rem">
+                                                Просмотры</a>
+                                            <a href="#" class="btn btn-outline-secondary" style="font-size: .7rem">
+                                                Добавленны</a>
+                                        </div>
+                                    </div>
+                                    <div style="border: 1px solid lightgrey;
+                                    border-radius: .5rem;
+                                    box-sizing: initial;padding:1rem;
+                                    font-size: .8rem; color: gray">
+                                        <p style="text-align: center">
+                                            У вас нет <span style="color: blue">добавленных в закладки вопросов. </span>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-11 d-flex flex-column" style="width: 94%; padding:0">
+                                    <div class="group1 d-flex justify-content-between" style="margin-bottom: .5rem">
+                                        <h4 class="h5">Отслеживаемые сообщения</h4>
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary"
+                                               style="font-size: .7rem">Голоса</a>
+                                            <a href="#" class="btn btn-outline-secondary active" style="font-size: .7rem">
+                                                Активность</a>
+                                            <a href="#" class="btn btn-outline-secondary" style="font-size: .7rem">
+                                                Новые</a>
+                                            <a href="#" class="btn btn-outline-secondary" style="font-size: .7rem">
+                                                Просмотры</a>
+                                            <a href="#" class="btn btn-outline-secondary" style="font-size: .7rem">
+                                                Добавленны</a>
+                                        </div>
+                                    </div>
+                                    <div style="border: 1px solid lightgrey;
+                                    border-radius: .5rem;
+                                    box-sizing: initial;padding:1rem;
+                                    font-size: .8rem; color: gray">
+                                        <p style="text-align: center">
+                                           Вы не   <span style="color: blue">отслеживаете ни одного сообщения. </span>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-11 d-flex flex-column" style="width: 94%; padding:0">
+                                    <div class="group1 d-flex justify-content-between" style="margin-bottom: .5rem">
+                                        <h4 class="h5">Учётные записи</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-between" style="border: 1px solid lightgrey;
+                                    border-radius: .5rem;
+                                    box-sizing: initial;padding:1rem;
+                                    font-size: .8rem; color: gray">
+                                        <a href="/user/profile" style="text-decoration: none">
+                                            <img src="../../images/header-images/icon/kata_academy.jpeg" alt="kata"
+                                                 style="height: 1rem">
+                                            KataAcademy
+                                        </a>
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-11" style="width: 94%; padding:0">
+                                    <div class="group1 d-flex justify-content-between" style="margin-bottom: .5rem">
+                                        <h4 class="h5">Активные конкурсы (<span class="count-competition">0</span>)</h4>
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary  active"
+                                               style="font-size: .7rem">Текущие</a>
+                                            <a href="#" class="btn btn-outline-secondary" style="font-size: .7rem">
+                                                Предложил</a>
+                                            <a href="#" class="btn btn-outline-secondary" style="font-size: .7rem">
+                                                Заработал</a>
+                                        </div>
+                                    </div>
+                                    <div style="border: 1px solid lightgrey;
+                                    border-radius: .5rem;
+                                    box-sizing: initial;padding:1rem;
+                                    font-size: .8rem; color: gray">
+                                        <p style="text-align: center">
+                                            У вас нет действующих  <span style="color: blue">конкурсов </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-11 d-flex flex-column" style="width: 94%; padding:0">
+                                    <div class="group1 d-flex justify-content-between" style="margin-bottom: .5rem">
+                                        <h4 class="h5">Отданные голоса</h4>
+
+                                    </div>
+                                    <div style="border: 1px solid lightgrey;
+                                    border-radius: .5rem;
+                                    box-sizing: initial;padding:1rem;
+                                    font-size: .8rem; color: gray">
+                                        <p style="text-align: center">
+                                            Вы ни разу не   <span style="color: blue">голосовали </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-left: 1rem; margin-bottom: 3rem; margin-top: 2rem">
+                            <a href="#" style="text-decoration: none">
+                                <img src="../../images/header-images/icon/wifi.png" alt="" style="height: .9rem;
+                                margin-right: .5rem">
+                                Лента участника</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="app-footer"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+    <script src="../../js/layout/Header.js"></script>
+    <script src="../../js/layout/SideBar.js"></script>
+    <script src="../../js/layout/Footer.js"></script>
+    <script src="../../js/scripts.js"></script>
+
+</div>
+</body>
+</html>

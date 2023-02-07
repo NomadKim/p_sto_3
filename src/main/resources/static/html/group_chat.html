@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/group_chat.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="../js/layout/Header.js"></script>
+    <script src="../js/layout/SideBar.js"></script>
+    <script src="../js/layout/Footer.js"></script>
+    <script src="js/group_chat.js"></script>
+</head>
+<body onload="connect()">
+<div class="container-fluid">
+    <div id="app-header"></div>
+    <div class="row" style="height: 80vh" id="main-content">
+        <div class="col-2" id="app-side-bar" style="border-right: 1px solid lightgrey"></div>
+        <div class="col-7" style="height: 80vh; overflow: scroll">
+
+            <div class="heading p-3 d-flex justify-content-between" style="width: 100%">
+                <h1>Simple chat</h1>
+            </div>
+        <div class="chat_window">
+            <div class="top_menu">
+                <div class="title">Chat</div>
+            </div>
+
+            <ul class="messages"></ul>
+            <div class="bottom_wrapper clearfix">
+                <div class="message_input_wrapper">
+                    <input id="message_input_value" class="message_input" placeholder="Type your message here..."/>
+                </div>
+                <div class="send_message">
+                    <div class="icon" onclick="sendMessage()">Send</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="message_template" class="message_template">
+            <li class="message">
+                <div class="avatar"></div>
+                <div class="text_wrapper">
+                    <div class="text"></div>
+                </div>
+            </li>
+        </div>
+        </div>
+    </div>
+    <div id="app-footer"></div>
+</div>
+</body>
+</html>

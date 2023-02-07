@@ -1,0 +1,30 @@
+
+p * {
+    display: block;
+}
+
+input[type=text] {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 100%;
+    border: 1px solid #333;
+    margin: 0;
+}
+
+.error.active {
+    padding: 0.3em;
+}
+
+label.error {
+    color: red;
+    font-size: 1rem;
+    display: block;
+    margin-top: 5px;
+}
+
+input.error {
+    border: 1px dashed red;
+    font-weight: 300;
+    color: red;
+}
